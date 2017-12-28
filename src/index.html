@@ -26,12 +26,12 @@
     <script>
         $(function() {
             function foo(arg1, arg2) {
-                var a = arguments[0] || {},
-                    b = arg2 && 0,
-                    c = 1 && 2;
-                console.log(a, b, c);
+                console.dir(arguments);
+                var a = 0 || 1 || 10,
+                    b = 0 && 0 && 10
+                console.log(a, b);
             }
-            foo(0, 1);
+            foo(false, false);
         })
     </script>
 </head>
