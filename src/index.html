@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0
+        }
+        
+        p {
+            height: 100px;
+            /* width: 100px; */
+            /* position: relative; */
+            border: 1px solid red;
+        }
+        
+        div {
+            border: 1px solid blue;
+        }
+    </style>
+    <script src="./lib/jquery-3.2.1.js"></script>
+    <script>
+        $(function() {
+            function foo(arg1, arg2) {
+                var a = arguments[0] || {},
+                    b = arg2 && 0,
+                    c = 1 && 2;
+                console.log(a, b, c);
+            }
+            foo(0, 1);
+        })
+    </script>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li class="l1">5</li>
+    </ul>
+</body>
+
+</html>
